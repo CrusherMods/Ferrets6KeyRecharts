@@ -16,6 +16,8 @@ class Ratings
             ranking = "(FC)";
         else if (PlayState.misses < 10) // Single Digit Combo Breaks
             ranking = "(SDCB)";
+        else if (PlayState.misses > 999) // what how
+            ranking = "(yo what the fuck how are you still alive)";
         else
             ranking = "(Clear)";
 
@@ -36,6 +38,7 @@ class Ratings
             accuracy >= 85, // A.
             accuracy >= 80, // A
             accuracy >= 70, // B
+            accuracy = 69, // that's a nice accuracy you got there pal
             accuracy >= 60, // C
             accuracy < 60 // D
         ];
@@ -76,8 +79,10 @@ class Ratings
                     case 13:
                         ranking += " B";
                     case 14:
-                        ranking += " C";
+                        ranking += " nice"; 
                     case 15:
+                        ranking += " C";
+                    case 16:
                         ranking += " D";
                 }
                 break;
