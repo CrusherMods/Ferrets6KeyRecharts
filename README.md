@@ -29,3 +29,6 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 ## FNF with extra key support
 - [TheZoroForce240](https://gamebanana.com/members/1708748) - Creator of the extra keys engine
 - [7salad3salad](https://gamebanana.com/members/1845232) - Extra keys week 5 charts
+
+## Mods used
+- [List of mods here](https://docs.google.com/document/d/159hVGQtsCg3TqqkWwle4YFqKRnx-Bs1NIEW859-Y16I/edit?usp=sharing)
