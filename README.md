@@ -19,7 +19,7 @@ Links: **[itch.io page](https://ninja-muffin24.itch.io/funkin) ⋅ [Newgrounds](
 
 This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
 ## Kade Engine
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/KadeDev/Kade-Engine?include_prereleases&label=latest%20version) [![Discord](https://img.shields.io/discord/808039740464300104?label=discord)]
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/KadeDev/Kade-Engine?include_prereleases&label=latest%20version) ![Discord](https://img.shields.io/discord/808039740464300104?label=discord)
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
 - [GWebDev](https://github.com/GrowtopiaFli) - Video Code
