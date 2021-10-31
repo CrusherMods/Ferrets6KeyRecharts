@@ -38,7 +38,6 @@ class Ratings
             accuracy >= 85, // A.
             accuracy >= 80, // A
             accuracy >= 70, // B
-            accuracy = 69, // that's a nice accuracy you got there pal
             accuracy >= 60, // C
             accuracy < 60 // D
         ];
@@ -79,10 +78,8 @@ class Ratings
                     case 13:
                         ranking += " B";
                     case 14:
-                        ranking += " nice"; 
-                    case 15:
                         ranking += " C";
-                    case 16:
+                    case 15:
                         ranking += " D";
                 }
                 break;
