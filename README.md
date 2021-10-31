@@ -3,7 +3,7 @@
 
 # Ferret's 6 Key Recharts
 
-*A mod for [FNF with extra key support](https://gamebanana.com/mods/311713), which is a mod for [Kade Engine](https://github.com/KadeDev/Kade-Engine) (with the version this is running), which is a mod of [Friday Night Funkin'](https://ninja-muffin24.itch.io/funkin).
+A mod for [FNF with extra key support](https://gamebanana.com/mods/311713), which is a mod for [Kade Engine](https://github.com/KadeDev/Kade-Engine) (with the version this is running), which is a mod of [Friday Night Funkin'](https://ninja-muffin24.itch.io/funkin).
 
 **REMEMBER**: This is a **mod**. This is not the vanilla game and should be treated as a **modification**. This is not and probably will never be official, so don't get confused.
 # Credits
