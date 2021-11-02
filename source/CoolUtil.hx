@@ -6,7 +6,7 @@ using StringTools;
 
 class CoolUtil
 {
-	public static var difficultyArray:Array<String> = ['Easy', "6KEY", "Hard"];
+	public static var difficultyArray:Array<String> = ['Easy', "6 KEY", "Hard"];
 
 	public static function difficultyFromInt(difficulty:Int):String
 	{
