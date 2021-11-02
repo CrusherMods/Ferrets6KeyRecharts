@@ -980,9 +980,9 @@ class Character extends FlxSprite
 				iconColor = 'FFe353c8';
 				var tex = Paths.getSparrowAtlas('characters/demonCesar', 'shared');
 				frames = tex;
-
+	
 				trace(tex.frames.length);
-
+	
 				animation.addByPrefix('idle', 'BF idle dance', 24, false);
 				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
 				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
@@ -993,15 +993,17 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
 				animation.addByPrefix('hey', 'BF HEY', 24, false);
+				animation.addByPrefix('dodge', 'boyfriend dodge', 24, false);
 				animation.addByPrefix('transition', 'BF Transition', 24, false);
-
+	
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
-
+	
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
-
+	
 				addOffset('idle', -5);
+				addOffset('dodge', -5);
 				addOffset("singUP", -61, 13);
 				addOffset("singRIGHT", -75, -10);
 				addOffset("singLEFT", -15, -3);
@@ -1016,9 +1018,9 @@ class Character extends FlxSprite
 				addOffset('deathLoop', 37, 5);
 				addOffset('deathConfirm', 37, 69);
 				addOffset('scared', -54, -12);
-
+	
 				playAnim('idle');
-
+	
 				flipX = true;
 	
 			case 'gf-tea':
@@ -1055,19 +1057,19 @@ class Character extends FlxSprite
 
 			case 'taki':
 				iconColor = 'FFd34470';
-				tex = Paths.getSparrowAtlas('characters/taki');
+				tex = Paths.getSparrowAtlas('characters/taki_assets');
 				frames = tex;
-				animation.addByPrefix('idle', 'monster idle', 24, false);
-				animation.addByPrefix('singUP', 'monster up note', 24, false);
-				animation.addByPrefix('singDOWN', 'monster down', 24, false);
-				animation.addByPrefix('singLEFT', 'Monster left note', 24, false);
-				animation.addByPrefix('singRIGHT', 'Monster Right note', 24, false);
+				animation.addByPrefix('idle', 'takiidle', 24, false);
+				animation.addByPrefix('singUP', 'takiup', 24, false);
+				animation.addByPrefix('singDOWN', 'takidown', 24, false);
+				animation.addByPrefix('singLEFT', 'takileft', 24, false);
+				animation.addByPrefix('singRIGHT', 'takiright', 24, false);
 
 				addOffset('idle');
-				addOffset("singUP", -20, 50);
-				addOffset("singRIGHT", -51);
-				addOffset("singLEFT", -30);
-				addOffset("singDOWN", -30, -40);
+				addOffset("singUP", -80, 17);
+				addOffset("singRIGHT", -21, -5);
+				addOffset("singLEFT", 38, -18);
+				addOffset("singDOWN", -30, -210);
 
 				playAnim('idle');
 

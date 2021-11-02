@@ -1571,8 +1571,8 @@ class PlayState extends MusicBeatState
 				dad.y += 320;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);	
 			case "taki":
-				dad.y += 180;
-				dad.x += 300;	
+				dad.y += 160;
+				dad.x += 230;
 			case 'agoti':
 				camPos.x += 400;
 				dad.y += 100;
@@ -1641,16 +1641,16 @@ class PlayState extends MusicBeatState
 				gf.x += 70;
 				boyfriend.x += 130;	
 			case 'spookyBOO':
-				boyfriend.x += 500;
-				boyfriend.y += 155;
-				gf.x += 300;
-				gf.y += 80;
+				boyfriend.x = 1086.7;
+				boyfriend.y = 604.7;
+				gf.x = 524;
+				gf.y = 245;
 				gf.scrollFactor.set(1.0, 1.0);
-				if(FlxG.save.data.distractions){
-					var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
-					evilTrail.framesEnabled = false; 
-					add(evilTrail);
-				}
+					if (FlxG.save.data.distractions) {
+						var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
+						evilTrail.framesEnabled = false;
+						add(evilTrail);
+					}
 			case 'void':
 				boyfriend.y += 50;
 				boyfriend.x += 100; 
@@ -1970,7 +1970,6 @@ class PlayState extends MusicBeatState
 				moreDark = new FlxSprite(0, 0).loadGraphic(Paths.image('evenMOREdarkShit'));
 				moreDark.cameras = [camHUD];
 				add(moreDark);
-	
 			}
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
@@ -4304,6 +4303,9 @@ class PlayState extends MusicBeatState
 						camFollow.x = dad.getMidpoint().x + 120;
 					case 'spookyBOO':
 						camFollow.x = dad.getMidpoint().x - -400;
+					case 'taki':
+							camFollow.x = dad.getMidpoint().x - -400;
+							camFollow.y = dad.getMidpoint().y - -100;	
 					case 'sonic':
 						camFollow.y = dad.getMidpoint().y - 30;
 						camFollow.x = dad.getMidpoint().x + 120;	
@@ -4726,16 +4728,14 @@ class PlayState extends MusicBeatState
 										{
 											createSpookyText(ExTrickyLinesSing[FlxG.random.int(0,ExTrickyLinesSing.length)]);
 										}
+								case 'taki':
+									health -= 0.02;
+									gf.playAnim('scared');		
 							}
 						if (dad.curCharacter == 'neomonster')
 							{
 								FlxG.camera.shake(0.015, 0.1);
 								camHUD.shake(0.005, 0.1);
-							}
-						if (dad.curCharacter == 'taki')
-							{
-								health -= 0.02;
-								gf.playAnim('scared');	
 							}
 
 						if (FlxG.save.data.cpuStrums)
