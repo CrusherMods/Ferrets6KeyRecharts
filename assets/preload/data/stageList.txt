@@ -1,14 +1,8 @@
+street2
 sonicFUNSTAGE
 SONICstage
 void
 stage
-halloween
-philly
-limo
-mall
-mallEvil
-school
-schoolEvil
 nevada
 auditorHell
 swordarena

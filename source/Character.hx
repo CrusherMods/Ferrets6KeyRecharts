@@ -992,18 +992,14 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
-				animation.addByPrefix('hey', 'BF HEY', 24, false);
-				animation.addByPrefix('dodge', 'boyfriend dodge', 24, false);
-				animation.addByPrefix('transition', 'BF Transition', 24, false);
-	
+				animation.addByPrefix('hey', 'BF HEY!!', 24, false);
 				animation.addByPrefix('firstDeath', "BF dies", 24, false);
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
-	
-				animation.addByPrefix('scared', 'BF idle shaking', 24);
+	            animation.addByPrefix('scared', 'BF idle shaking', 24);
+				
 	
 				addOffset('idle', -5);
-				addOffset('dodge', -5);
 				addOffset("singUP", -61, 13);
 				addOffset("singRIGHT", -75, -10);
 				addOffset("singLEFT", -15, -3);
@@ -1013,7 +1009,6 @@ class Character extends FlxSprite
 				addOffset("singLEFTmiss", -16, -4);
 				addOffset("singDOWNmiss", -36, -84);
 				addOffset("hey", -54, 1);
-				addOffset("transition", -54, 1);
 				addOffset('firstDeath', 37, 11);
 				addOffset('deathLoop', 37, 5);
 				addOffset('deathConfirm', 37, 69);
@@ -1164,6 +1159,43 @@ class Character extends FlxSprite
 					
 	
 				playAnim('idle');	
+			
+			case 'happymouse':
+				iconColor = '757575';
+				tex = Paths.getSparrowAtlas('characters/happymouse_assets');
+				frames = tex;
+				animation.addByPrefix('idle', 'Sadmouse Idle', 24);
+				animation.addByPrefix('singUP', 'Sadmouse Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sadmouse Right', 24);
+				animation.addByPrefix('singDOWN', 'Sadmouse Down', 24);
+				animation.addByPrefix('singLEFT', 'Sadmouse Left', 24);
+
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
+			case 'happymouse2':
+				iconColor = '202020';
+				tex = Paths.getSparrowAtlas('characters/happymouse_assets2');
+				frames = tex;
+				animation.addByPrefix('idle', 'Sadmouse Idle', 24);
+				animation.addByPrefix('singUP', 'Sadmouse Up', 24);
+				animation.addByPrefix('singRIGHT', 'Sadmouse Right', 24);
+				animation.addByPrefix('singDOWN', 'Sadmouse Down', 24);
+				animation.addByPrefix('singLEFT', 'Sadmouse Left', 24);
+				animation.addByPrefix('singDOWN-alt', 'Sadmouse Laugh', 24);
+	
+				addOffset('idle', 0, 0);
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+				addOffset("singDOWN-alt", 0, 0);
+	
+				playAnim('idle');
 		}
 
 		dance();

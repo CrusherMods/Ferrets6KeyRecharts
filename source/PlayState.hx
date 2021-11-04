@@ -1370,6 +1370,20 @@ class PlayState extends MusicBeatState
 
 
 				}	
+				case 'street2':
+					{
+						//Someone help idk how to position people
+						//Wait I scrolled down lol
+						   defaultCamZoom = 0.9;
+						   curStage = 'street2';
+
+						   var street:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('street2'));
+						   street.setGraphicSize(Std.int(street.width * 0.9));
+						   street.antialiasing = true;
+						   street.scrollFactor.set(0.9, 0.9);
+						   street.active = false;
+						   add(street);
+					}
 				case 'sonicFUNSTAGE':
 					{
 							defaultCamZoom = 0.9;
@@ -1664,6 +1678,11 @@ class PlayState extends MusicBeatState
 				dad.scrollFactor.set(1.37, 1);
 				boyfriend.scrollFactor.set(1.37, 1);
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y - 100);	
+			case 'street2':
+				dad.x += 50;
+				dad.y += 50;
+				gf.x += 50;
+				gf.y += 50;
 			case 'sonicFUNSTAGE':
 				boyfriend.y += 340;
 				boyfriend.x += 80;

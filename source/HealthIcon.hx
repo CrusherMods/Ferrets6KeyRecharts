@@ -85,7 +85,15 @@ class HealthIcon extends FlxSprite
 			animation.add('tricky', [2, 3], 0, false, isPlayer);
 		case 'extricky':
 			loadGraphic(Paths.image('exTrickyIcons'), true, 150, 150);
-			animation.add('extricky', [0, 1], 0, false, isPlayer);			
+			animation.add('extricky', [0, 1], 0, false, isPlayer);	
+		case 'happymouse':
+			loadGraphic(Paths.image('icon-happymouse'), true, 150, 150);
+	        antialiasing = true;
+			animation.add('happymouse', [0, 1], 0, false, isPlayer);		
+		case 'happymouse2':
+			loadGraphic(Paths.image('icon-happymouse2'), true, 150, 150);
+		    antialiasing = true;
+			animation.add('happymouse2', [0, 1], 0, false, isPlayer);	
 		default:
 			loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
